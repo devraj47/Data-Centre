@@ -1,0 +1,12 @@
+{
+    "name": "Data_Analysis",
+    "description": "Data Analysis Tool for Data-Centre",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "flow.json",
+            "credentialsFile": "flow_cred.json"
+        }
+    }
+}

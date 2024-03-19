@@ -1,0 +1,1598 @@
+[
+    {
+        "id": "d57bfbe67600b89c",
+        "type": "tab",
+        "label": "Flow 6",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8f9c5b4c2b7ead47",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Report",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "cc6a072b86efde7a",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "2f667531567a8d48",
+        "order": 1,
+        "disp": false,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8eeaa29da50ee831",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "BMS",
+        "name": "localhost",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.x",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "c1ac1b9459270f6e",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "2f667531567a8d48",
+        "order": 2,
+        "disp": false,
+        "width": 27,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2f667531567a8d48",
+        "type": "ui_tab",
+        "name": "REPORT",
+        "icon": "",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "bb5e0c0f34496f3d",
+        "type": "ui_form",
+        "z": "d57bfbe67600b89c",
+        "name": "",
+        "label": "",
+        "group": "cc6a072b86efde7a",
+        "order": 3,
+        "width": 12,
+        "height": "10",
+        "options": [
+            {
+                "label": "From Date",
+                "value": "fromdate",
+                "type": "date",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "From Time",
+                "value": "fromtime",
+                "type": "time",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "To Date",
+                "value": "todate",
+                "type": "date",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "To Time",
+                "value": "totime",
+                "type": "time",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "fromdate": "",
+            "fromtime": "",
+            "todate": "",
+            "totime": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": true,
+        "className": "",
+        "x": 410,
+        "y": 360,
+        "wires": [
+            [
+                "fb10ded4ce75b9fa"
+            ]
+        ]
+    },
+    {
+        "id": "573c5c160ed523c7",
+        "type": "ui_dropdown",
+        "z": "d57bfbe67600b89c",
+        "name": "type",
+        "label": "SELECT ASSET",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "cc6a072b86efde7a",
+        "order": 1,
+        "width": 12,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "MAIN  LT PANEL",
+                "value": "ENERGYFULL",
+                "type": "str"
+            },
+            {
+                "label": "CHILLER",
+                "value": "CHILLERFULL",
+                "type": "str"
+            },
+            {
+                "label": "HT PANEL ",
+                "value": "HTPENERGYFULL",
+                "type": "str"
+            },
+            {
+                "label": "LT-KIOSK",
+                "value": "LTKIOSKENERGYFULL",
+                "type": "str"
+            },
+            {
+                "label": "PDU",
+                "value": "PDUFULL",
+                "type": "str"
+            },
+            {
+                "label": "UPS ",
+                "value": "UPSFULL",
+                "type": "str"
+            },
+            {
+                "label": "DG ",
+                "value": "DGFULL",
+                "type": "str"
+            },
+            {
+                "label": "PAC ",
+                "value": "PACDATA2FULL",
+                "type": "str"
+            },
+            {
+                "label": "BMS ELECTRICAL PANEL",
+                "value": "BMSENERGYFULL",
+                "type": "str"
+            },
+            {
+                "label": "AHU/CSU",
+                "value": "BMSAHCSUFULL",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 570,
+        "y": 280,
+        "wires": [
+            [
+                "22d10a5ffbd8ca46"
+            ]
+        ]
+    },
+    {
+        "id": "22d10a5ffbd8ca46",
+        "type": "change",
+        "z": "d57bfbe67600b89c",
+        "name": "asset type",
+        "rules": [
+            {
+                "t": "set",
+                "p": "query.uId",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f9247d23be845dfd",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "Set Flow Context",
+        "func": "function queryBuild() {\n  return `SELECT ActiveEnergyD FROM ENERGYFULL \n    WHERE time >= '{{msg.payload.fdt}}Z' AND time <= '{{msg.payload.tdt}}Z' \n    AND unit_id = '{{msg.payload.uId}}'`\n}\n\n\nlet query = {\n    'dateandtime':\"\",\n    'uId' : \"\",\n    'build': queryBuild\n}\nflow.set(\"query\",query);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dbfad83f4e015db8",
+        "type": "inject",
+        "z": "d57bfbe67600b89c",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 60,
+        "wires": [
+            [
+                "f9247d23be845dfd"
+            ]
+        ]
+    },
+    {
+        "id": "dc05104bc7b63291",
+        "type": "influxdb in",
+        "z": "d57bfbe67600b89c",
+        "influxdb": "8eeaa29da50ee831",
+        "name": "Energy",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 800,
+        "y": 400,
+        "wires": [
+            [
+                "4f013de82f9996f5",
+                "427f62c2e33a84b3",
+                "82ca4332a71d5952",
+                "53bec4916ec154b9"
+            ]
+        ]
+    },
+    {
+        "id": "e97fd15f95a5ec7d",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "function 101",
+        "func": "let fromDate = new Date(msg.payload.fromdate);\nlet fromTime = new Date(msg.payload.fromtime);\nlet toDate = new Date(msg.payload.todate);\nlet toTime = new Date(msg.payload.totime);\n\nlet a = new Date(fromDate.getFullYear(), fromDate.getMonth(), fromDate.getDate(), fromTime.getHours(), fromTime.getMinutes(), fromTime.getSeconds());\nlet b = new Date(toDate.getFullYear(), toDate.getMonth(), toDate.getDate(), toTime.getHours(), toTime.getMinutes(), toTime.getSeconds());\n\nif(flow.get('query').uId === \"ENERGYFULL\"){\n   \n            msg.query = \"SELECT MEAN(*) AS AVERAGE  FROM \" + flow.get('query').uId +\n            \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\'  GROUP BY \\\"UnitID\\\" \" +  flow.get('query').timegroup;\n}\n\n\nelse if (flow.get('query').uId === \"ENERGYONLY\") {\n    \n    msg.query = \"SELECT MAX(ActiveEnergyD) - MIN(ActiveEnergyD) AS EBConsumption,MAX(ActiveEnergyR) - MIN(ActiveEnergyR) AS DGConsumption FROM \" + \"ENERGYFULL\" +\n        \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\'  GROUP BY \\\"UnitID\\\" \"+ flow.get('query').timegroup;\n    }\n\nelse if (flow.get('query').uId === \"CHILLERFULL\") {\n\n        msg.query = \"SELECT MEAN(*) AS AVERAGE  FROM \" + flow.get('query').uId +\n            \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\'  GROUP BY \\\"UnitID\\\" \" + flow.get('query').timegroup;\n    }\n\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1450,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9e1aac1b3d5da317",
+        "type": "ui_table",
+        "z": "d57bfbe67600b89c",
+        "group": "c1ac1b9459270f6e",
+        "name": "",
+        "order": 1,
+        "width": 27,
+        "height": 16,
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 1330,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "4f013de82f9996f5",
+        "type": "switch",
+        "z": "d57bfbe67600b89c",
+        "name": "",
+        "property": "query.uId",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ENERGYFULL",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "CHILLERFULL",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "HTPENERGYFULL",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "LTKIOSKENERGYFULL",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "PDUFULL",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "UPSFULL",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DGFULL",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "PACDATA2FULL",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "BMSENERGYFULL",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "BMSAHCSUFULL",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 10,
+        "x": 810,
+        "y": 540,
+        "wires": [
+            [
+                "491a92400fb21db5"
+            ],
+            [
+                "d50be96203de3a40"
+            ],
+            [
+                "0e7d532ad1fb8ca9"
+            ],
+            [
+                "f071b6afc250350a",
+                "c9e36655bd989357"
+            ],
+            [
+                "99a79eac5ff4ed6f"
+            ],
+            [
+                "bf661980301dcc72"
+            ],
+            [
+                "89f7202b70ad6203"
+            ],
+            [
+                "52effe7146da3ae8"
+            ],
+            [
+                "c3011a281177504c"
+            ],
+            [
+                "92a096a5bbddae0e"
+            ]
+        ]
+    },
+    {
+        "id": "392547ce60ed6eaa",
+        "type": "ui_dropdown",
+        "z": "d57bfbe67600b89c",
+        "name": "",
+        "label": "TIME FRAME",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "cc6a072b86efde7a",
+        "order": 2,
+        "width": 12,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "1 HOUR",
+                "value": ", time(1h, -5h30m)",
+                "type": "str"
+            },
+            {
+                "label": " 1 DAY",
+                "value": ", time(1d, -5h30m)",
+                "type": "str"
+            },
+            {
+                "label": "1 WEEK",
+                "value": ", time(1w,-5h30m)",
+                "type": "str"
+            },
+            {
+                "label": " 1 MONTH",
+                "value": ", time(30d,-5h30m)",
+                "type": "str"
+            },
+            {
+                "label": "FULL",
+                "value": ", time(1m,-5h30m)",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 580,
+        "y": 220,
+        "wires": [
+            [
+                "b3927a0318297846"
+            ]
+        ]
+    },
+    {
+        "id": "b3927a0318297846",
+        "type": "change",
+        "z": "d57bfbe67600b89c",
+        "name": "Time group",
+        "rules": [
+            {
+                "t": "set",
+                "p": "query.timegroup",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "82ca4332a71d5952",
+        "type": "delay",
+        "z": "d57bfbe67600b89c",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 380,
+        "y": 480,
+        "wires": [
+            [
+                "03689acb56ea9ea7"
+            ]
+        ]
+    },
+    {
+        "id": "03689acb56ea9ea7",
+        "type": "change",
+        "z": "d57bfbe67600b89c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "query.timegroup",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "query.uId",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 540,
+        "wires": [
+            [
+                "392547ce60ed6eaa",
+                "573c5c160ed523c7"
+            ]
+        ]
+    },
+    {
+        "id": "fcc2e3e43ed79ea0",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "function 109",
+        "func": "let fromDate = new Date(msg.payload.fromdate);\nlet fromTime = new Date(msg.payload.fromtime);\nlet toDate = new Date(msg.payload.todate);\nlet toTime = new Date(msg.payload.totime);\n\nlet a = new Date(fromDate.getFullYear(), fromDate.getMonth(), fromDate.getDate(), fromTime.getHours(), fromTime.getMinutes(), fromTime.getSeconds());\nlet b = new Date(toDate.getFullYear(), toDate.getMonth(), toDate.getDate(), toTime.getHours(), toTime.getMinutes(), toTime.getSeconds());\n\nif(flow.get('query').uId === \"ENERGYFULL\"){\n    if(flow.get('query').timegroup === \"1h\")\n            msg.query = \"SELECT MEAN(*) FROM \" + flow.get('query').uId +\n            \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\'  GROUP BY \\\"UnitID\\\" \" +  flow.get('query').timegroup;\n        }\n     if (flow.get('query').timegroup === \"1d\"){\n    msg.query = \"SELECT MEAN(*) FROM \" + flow.get('query').uId +\n        \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\'  GROUP BY \\\"UnitID\\\" , time(24h)\";\n        }\n\n     if (flow.get('query').timegroup === \"1w\") {\n    msg.query = \"SELECT MEAN(*) FROM \" + flow.get('query').uId +\n        \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\'  GROUP BY \\\"UnitID\\\" , time(1w)\";\n        }\n    if (flow.get('query').timegroup === \"1m\") {\n    msg.query = \"SELECT MEAN(*) FROM \" + flow.get('query').uId +\n        \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\'  GROUP BY \\\"UnitID\\\" , time(30d)\";\n}\n\n     if (flow.get('query').timegroup === \"all\") {\n    msg.query = \"SELECT MEAN(*) FROM \" + flow.get('query').uId +\n        \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\'  GROUP BY \\\"UnitID\\\" \";\n    }\n\n\nelse if (flow.get('query').uId === \"ENERGYONLY\") {\n    if (flow.get('query').timegroup === \"1h\"){\n    msg.query = \"SELECT MAX(ActiveEnergyD) - MIN(ActiveEnergyD) AS EBConsumption,MAX(ActiveEnergyR) - MIN(ActiveEnergyR) AS DGConsumption FROM \" + \"ENERGYFULL\" +\n        \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\'  GROUP BY \\\"UnitID\\\" ,time(1h) \";\n    }\n\n    if (flow.get('query').timegroup === \"1d\") {\n        msg.query = \"SELECT MAX(ActiveEnergyD) - MIN(ActiveEnergyD) AS EBConsumption,MAX(ActiveEnergyR) - MIN(ActiveEnergyR) AS DGConsumption FROM \" + \"ENERGYFULL\" +\n            \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\'  GROUP BY \\\"UnitID\\\" ,time(24h) \";\n    }\n\n    if (flow.get('query').timegroup === \"1w\") {\n        msg.query = \"SELECT MAX(ActiveEnergyD) - MIN(ActiveEnergyD) AS EBConsumption,MAX(ActiveEnergyR) - MIN(ActiveEnergyR) AS DGConsumption FROM \" + \"ENERGYFULL\" +\n            \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\'  GROUP BY \\\"UnitID\\\" ,time(1w) \";\n    }\n\n    if (flow.get('query').timegroup === \"1m\") {\n        msg.query = \"SELECT MAX(ActiveEnergyD) - MIN(ActiveEnergyD) AS EBConsumption,MAX(ActiveEnergyR) - MIN(ActiveEnergyR) AS DGConsumption FROM \" + \"ENERGYFULL\" +\n            \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\'  GROUP BY \\\"UnitID\\\" ,time(30) \";\n    }\n\n    if (flow.get('query').timegroup === \"all\") {\n        msg.query = \"SELECT MAX(ActiveEnergyD) - MIN(ActiveEnergyD) AS EBConsumption,MAX(ActiveEnergyR) - MIN(ActiveEnergyR) AS DGConsumption FROM \" + \"ENERGYFULL\" +\n            \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\'  GROUP BY \\\"UnitID\\\" \";\n    }\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bc3ab73acea926e1",
+        "type": "debug",
+        "z": "d57bfbe67600b89c",
+        "name": "debug 105",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1490,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "fd54eb5b407e0964",
+        "type": "file",
+        "z": "d57bfbe67600b89c",
+        "name": "",
+        "filename": "C:\\Users\\DEVRAJ\\.node-red\\static/report.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1210,
+        "y": 860,
+        "wires": [
+            [
+                "bc3ab73acea926e1"
+            ]
+        ]
+    },
+    {
+        "id": "4c2437c37a6c62ba",
+        "type": "file",
+        "z": "d57bfbe67600b89c",
+        "name": "",
+        "filename": "C:\\Users\\DEVRAJ\\.node-red\\static/report.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1610,
+        "y": 720,
+        "wires": [
+            [
+                "bc3ab73acea926e1"
+            ]
+        ]
+    },
+    {
+        "id": "264d6dcf4ca642cc",
+        "type": "ui_template",
+        "z": "d57bfbe67600b89c",
+        "group": "cc6a072b86efde7a",
+        "name": "download report",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "format": "<button class=\"cctv\" onclick=\"openCCTV()\" style=\"background-color: green;\">DOWNLOAD REPORT</button>\n\n<script>\n    function openCCTV() {\n        // Define the URL you want to open\n        var url = '/report.csv'\n\n        // Open the URL in a new tab or window\n        window.open(url,'_blank');\n    }\n</script>\n\n<style>\n    .cctv {\n        display: flex;\n        flex-grow: 1;\n        border: none;\n        outline: none;\n        color: white;\n        justify-content: center;\n        align-items: center;\n        height:100%;\n        width:100%;\n        font-size:25px;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 820,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "78072db2b26c611d",
+        "type": "ui_button",
+        "z": "d57bfbe67600b89c",
+        "name": "",
+        "group": "cc6a072b86efde7a",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "CLEAR REPORT",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"NOTE:\":\"\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1730,
+        "y": 540,
+        "wires": [
+            [
+                "f4ab9923d7cb0142",
+                "70dc86da1f905921",
+                "9347ac5f5bd9de44"
+            ]
+        ]
+    },
+    {
+        "id": "f4ab9923d7cb0142",
+        "type": "csv",
+        "z": "d57bfbe67600b89c",
+        "name": "",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": false,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 1550,
+        "y": 600,
+        "wires": [
+            [
+                "4c2437c37a6c62ba",
+                "70dc86da1f905921"
+            ]
+        ]
+    },
+    {
+        "id": "70dc86da1f905921",
+        "type": "debug",
+        "z": "d57bfbe67600b89c",
+        "name": "debug 106",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1950,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "41c528ef7d775266",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "Convert to CSV",
+        "func": "var json_array = msg.payload;\n\n// Set the 'msg.reset' value of the last message to 'true'\njson_array[json_array.length - 1][\"msg.reset\"] = true;\n\n// Convert JSON array to CSV format\nvar csv_data = \"\";\nvar headers = Object.keys(json_array[0]);\n\ncsv_data += headers.join(\",\") + \"\\n\";\n\njson_array.forEach(function(obj) {\n    var row = headers.map(function(key) {\n        return obj[key];\n    });\n    csv_data += row.join(\",\") + \"\\n\";\n});\n\n// Set the CSV data as the payload\nmsg.payload = csv_data;\n\n// Set the output message properties\nmsg.topic = \"CSV Data\";\nmsg.filename = \"report.csv\";\nmsg.mimetype = \"text/csv\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1340,
+        "y": 540,
+        "wires": [
+            [
+                "fd54eb5b407e0964"
+            ]
+        ]
+    },
+    {
+        "id": "03772e6fcca5e80b",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "function 112",
+        "func": "let fromDate = new Date(msg.payload.fromdate);\nlet fromTime = new Date(msg.payload.fromtime);\nlet toDate = new Date(msg.payload.todate);\nlet toTime = new Date(msg.payload.totime);\n\nlet a = new Date(fromDate.getFullYear(), fromDate.getMonth(), fromDate.getDate(), fromTime.getHours(), fromTime.getMinutes(), fromTime.getSeconds());\nlet b = new Date(toDate.getFullYear(), toDate.getMonth(), toDate.getDate(), toTime.getHours(), toTime.getMinutes(), toTime.getSeconds());\n\nif(flow.get('query').uId === \"ENERGYFULL\"){\n   \n    msg.query = \"SELECT mean(\\\"ActiveEnergyD\\\") AS mean_ActiveEnergyD, mean(\\\"ActiveEnergyR\\\") AS mean_ActiveEnergyR FROM (SELECT \\\"ActiveEnergyD\\\", \\\"ActiveEnergyR\\\" FROM \" + flow.get('query').uId +\n        \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\' GROUP BY \\\"UnitID\\\", \" + flow.get('query').timegroup + \")\";\n\n\n}\n\n\nelse if (flow.get('query').uId === \"ENERGYONLY\") {\n    \n    msg.query = \"SELECT MAX(ActiveEnergyD) - MIN(ActiveEnergyD) AS EBConsumption,MAX(ActiveEnergyR) - MIN(ActiveEnergyR) AS DGConsumption FROM \" + \"ENERGYFULL\" +\n        \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\'  GROUP BY \\\"UnitID\\\" \"+ flow.get('query').timegroup;\n    }\n\n   \n\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1450,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "491a92400fb21db5",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "power",
+        "func": "// Retrieve the incoming message payload\nvar data = msg.payload;\nvar meterNames = [\"None\",//1\n    \"SPARE\",//1\n    \"UPS INPUT PANEL-1 (S-A)\",//2\n    \"CHILLER PANEL-2 (S-1)\",//3\n    \"(EB-1) SUPPLY FROM LT KIOSK - 1\",//4\n    \"(EB-2) SUPPLY FROM LT KIOSK - 2\",//5\n    \"SPARE\",//6\n    \"UPS INPUT PANEL-2 (S-B)\",//7\n    \"PAC PANEL (S-A)\",//8\n    \"CHILLER PANEL-2 (S-2)\",//9\n    \"3RD FLOOR OFFICE PANEL\",//10\n    \"FIRE PANEL (S-2)\",//11\n    \"UPS INPUT PANEL-2 (S-A)\",//12\n    \"CHILLER PANEL-1 (S-1)\",//13\n    \"SUPPLY FROM LT KIOSK - 3\",//14\n    \"SUPPLY FROM LT KIOSK - 4\",//15\n    \"UPS INPUT PANEL-2 (S-B)\",//16\n    \"UTILITY PANEL\",//17\n    \"CHILLER PANEL-1 (S-2)\",//18\n    \"PAC PANEL (S-B)\",//19\n    \"UPS ROOM AC PANEL\"//20\n];\n\nfor (let i = 0; i < data.length; i++) {\n    const object = data[i];\n    for (const prop in object) {\n        if (object.hasOwnProperty(prop) && prop.includes(\"PowerFactor\")) {\n            if (object[prop] > 1) {\n                object[prop] = 2 - object[prop];\n            } else if (object[prop] < -1) {\n                object[prop] = -2 - object[prop];\n            }\n        }\n    }\n}\n// Process the data\nvar processedData = data.map(function (entry) {\n    return {\n        'TIME': entry.time,\n        'EB CONSUMPTION (KWH)': (entry.EBConsumption !== null && entry.EBConsumption !== 0 ? (entry.EBConsumption / 1000).toFixed(2) : entry.EBConsumption),\n        'DG CONSUMPTION (KWH)': (entry.DGConsumption !== null && entry.DGConsumption !== 0 ? (entry.DGConsumption / 1000).toFixed(2) : entry.DGConsumption),\n        \"EB READING (KWH)\": (entry.EBReading !== null && entry.EBReading !== 0 ? (entry.EBReading / 1000).toFixed(2) : entry.EBReading),\n        \"DG READING (KWH)\": (entry.DGReading !== null && entry.DGReading !== 0 ? (entry.DGReading / 1000).toFixed(2) : entry.DGReading),\n        \"VOLTAGE R-ph (V)\": (entry.AVERAGE_VoltageAB !== null && entry.AVERAGE_VoltageAB !== 0 ? entry.AVERAGE_VoltageAB.toFixed(2) : entry.AVERAGE_VoltageAB),\n        \"VOLTAGE Y-ph (V)\": (entry.AVERAGE_VoltageBC !== null && entry.AVERAGE_VoltageBC !== 0 ? entry.AVERAGE_VoltageBC.toFixed(2) : entry.AVERAGE_VoltageBC),\n        \"VOLTAGE B-ph (V)\": (entry.AVERAGE_VoltageCA !== null && entry.AVERAGE_VoltageCA !== 0 ? entry.AVERAGE_VoltageCA.toFixed(2) : entry.AVERAGE_VoltageCA),\n        'CURRENT R-ph (A)': (entry.AVERAGE_CurrentA !== null && entry.AVERAGE_CurrentA !== 0 ? entry.AVERAGE_CurrentA.toFixed(2) : entry.AVERAGE_CurrentA),\n        'CURRENT Y-ph (A)': (entry.AVERAGE_CurrentB !== null && entry.AVERAGE_CurrentB !== 0 ? entry.AVERAGE_CurrentB.toFixed(2) : entry.AVERAGE_CurrentB),\n        'CURRENT B-ph (A)': (entry.AVERAGE_CurrentC !== null && entry.AVERAGE_CurrentC !== 0 ? entry.AVERAGE_CurrentC.toFixed(2) : entry.AVERAGE_CurrentC),\n        'ACTIVE POWER A (KW)': (entry.AVERAGE_ActivePowerA !== null && entry.AVERAGE_ActivePowerA !== 0 ? (entry.AVERAGE_ActivePowerA / 1).toFixed(2) : entry.AVERAGE_ActivePowerA),\n        'ACTIVE POWER B (KW)': (entry.AVERAGE_ActivePowerB !== null && entry.AVERAGE_ActivePowerB !== 0 ? (entry.AVERAGE_ActivePowerB / 1).toFixed(2) : entry.AVERAGE_ActivePowerB),\n        'ACTIVE POWER C (KW)': (entry.AVERAGE_ActivePowerC !== null && entry.AVERAGE_ActivePowerC !== 0 ? (entry.AVERAGE_ActivePowerC / 1).toFixed(2) : entry.AVERAGE_ActivePowerC),\n        'ACTIVE POWER T (KW)': (entry.AVERAGE_ActivePowerT !== null && entry.AVERAGE_ActivePowerT !== 0 ? (entry.AVERAGE_ActivePowerT / 1).toFixed(2) : entry.AVERAGE_ActivePowerT),\n        'POWERFACTOR A': (entry.AVERAGE_PowerFactorA !== null && entry.AVERAGE_PowerFactorA !== 0 ? entry.AVERAGE_PowerFactorA.toFixed(2) : entry.AVERAGE_PowerFactorA),\n        'POWERFACTOR B': (entry.AVERAGE_PowerFactorB !== null && entry.AVERAGE_PowerFactorB !== 0 ? entry.AVERAGE_PowerFactorB.toFixed(2) : entry.AVERAGE_PowerFactorB),\n        'POWERFACTOR C': (entry.AVERAGE_PowerFactorC !== null && entry.AVERAGE_PowerFactorC !== 0 ? entry.AVERAGE_PowerFactorC.toFixed(2) : entry.AVERAGE_PowerFactorC),\n        'FREQUENCY (Hz)': (entry.AVERAGE_Frequency !== null && entry.AVERAGE_Frequency !== 0 ? entry.AVERAGE_Frequency.toFixed(2) : entry.AVERAGE_Frequency),\n        'UNIT ID': entry.UnitID,\n        'MeterName': meterNames[entry.UnitID]\n    }; \n});\n\n\n\n// Set the processed data as the new payload\nmsg.payload = processedData;\n\n// Return the modified message\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 340,
+        "wires": [
+            [
+                "9e1aac1b3d5da317",
+                "41c528ef7d775266"
+            ]
+        ]
+    },
+    {
+        "id": "1f1d7c6d4e987f18",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "function 113",
+        "func": "// Retrieve the incoming message payload\nvar data = msg.payload;\n\n// Process the data\nvar processedData = data.map(function (entry) {\n    return {\n        'TIME': entry.time,\n        'ACTIVE POWER (KW)': (entry.AVERAGE_ActivePowerT !== null && entry.AVERAGE_ActivePowerT !== 0 ? (entry.AVERAGE_ActivePowerT / 1000).toFixed(2) : entry.AVERAGE_ActivePowerT),\n        'POWERFACTOR': (entry.AVERAGE_PowerFactorT !== null && entry.AVERAGE_PowerFactorT !== 0 ? entry.AVERAGE_PowerFactorT.toFixed(2) : entry.AVERAGE_PowerFactorT),\n        'CURRENT AVG (A)': (entry.AVERAGE_CurrentAvg !== null && entry.AVERAGE_CurrentAvg !== 0 ? entry.AVERAGE_CurrentAvg.toFixed(2) : entry.AVERAGE_CurrentAvg),\n        'FREQUENCY (Hz)': (entry.AVERAGE_Frequency !== null && entry.AVERAGE_Frequency !== 0 ? entry.AVERAGE_Frequency.toFixed(2) : entry.AVERAGE_Frequency),\n        'VOLTAGE LL (V)': (entry.AVERAGE_VoltageLL !== null && entry.AVERAGE_VoltageLL !== 0 ? entry.AVERAGE_VoltageLL.toFixed(2) : entry.AVERAGE_VoltageLL),\n        'VOLTAGE LN (V)': (entry.AVERAGE_VoltageLN !== null && entry.AVERAGE_VoltageLN !== 0 ? entry.AVERAGE_VoltageLN.toFixed(2) : entry.AVERAGE_VoltageLN),\n        'UNIT ID': entry.UnitID\n    };\n});\n\n// Set the processed data as the new payload\nmsg.payload = processedData;\n\n// Return the modified message\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1430,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d50be96203de3a40",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "chiller",
+        "func": "var data = msg.payload;\n\nvar processedData = data.map(function (entry) {\n    var machineName;\n\n    if (entry.UnitID == 1) {\n        machineName = \"CHILLER_1\";\n    } else if (entry.UnitID == 2) {\n        machineName = \"CHILLER_2\";\n    } else {\n        machineName = \"Unknown\"; // You can provide a default value for other cases\n    }\n\n    return {\n        'TIME': entry.time,\n        \"MACHINE_NAME\": machineName,\n        \"ACTUAL CAPACITY\": (entry.AVERAGE_ActCap !== null && entry.AVERAGE_ActCap !== 0 ? entry.AVERAGE_ActCap.toFixed(2) : entry.AVERAGE_ActCap),\n        \"EEFT\": (entry.AVERAGE_EEFT !== null && entry.AVERAGE_EEFT !== 0 ? entry.AVERAGE_EEFT.toFixed(2) : entry.AVERAGE_EEFT),\n        \"ELFT\": (entry.AVERAGE_ELFT !== null && entry.AVERAGE_ELFT !== 0 ? entry.AVERAGE_ELFT.toFixed(2) : entry.AVERAGE_ELFT),\n        \"OUTDOOR AIR T\": (entry.AVERAGE_OutdoorAirT !== null && entry.AVERAGE_OutdoorAirT !== 0 ? entry.AVERAGE_OutdoorAirT.toFixed(2) : entry.AVERAGE_OutdoorAirT),\n        \"C1 CONDENSER P\": (entry.AVERAGE_C1CondenserP !== null && entry.AVERAGE_C1CondenserP !== 0 ? entry.AVERAGE_C1CondenserP.toFixed(2) : entry.AVERAGE_C1CondenserP),\n        \"C1 CONDENSER T\": (entry.AVERAGE_C1CondenserT !== null && entry.AVERAGE_C1CondenserT !== 0 ? entry.AVERAGE_C1CondenserT.toFixed(2) : entry.AVERAGE_C1CondenserT),\n        \"C1 CURRENT\": (entry.AVERAGE_C1Curr !== null && entry.AVERAGE_C1Curr !== 0 ? entry.AVERAGE_C1Curr.toFixed(2) : entry.AVERAGE_C1Curr),\n        \"C1 DISCHARGE T\": (entry.AVERAGE_C1DischargeT !== null && entry.AVERAGE_C1DischargeT !== 0 ? entry.AVERAGE_C1DischargeT.toFixed(2) : entry.AVERAGE_C1DischargeT),\n        \"C1 EVAPORATOR P\": (entry.AVERAGE_C1EvaporatorP !== null && entry.AVERAGE_C1EvaporatorP !== 0 ? entry.AVERAGE_C1EvaporatorP.toFixed(2) : entry.AVERAGE_C1EvaporatorP),\n        \"C1 EVAPORATOR T\": (entry.AVERAGE_C1EvaporatorT !== null && entry.AVERAGE_C1EvaporatorT !== 0 ? entry.AVERAGE_C1EvaporatorT.toFixed(2) : entry.AVERAGE_C1EvaporatorT),\n        \"C1 POWER\": (entry.AVERAGE_C1Pow !== null && entry.AVERAGE_C1Pow !== 0 ? entry.AVERAGE_C1Pow.toFixed(2) : entry.AVERAGE_C1Pow),\n        \"C1 RLA\": (entry.AVERAGE_C1RLA !== null && entry.AVERAGE_C1RLA !== 0 ? entry.AVERAGE_C1RLA.toFixed(2) : entry.AVERAGE_C1RLA),\n        \"C1 SUCTION T\": (entry.AVERAGE_C1SuctionT !== null && entry.AVERAGE_C1SuctionT !== 0 ? entry.AVERAGE_C1SuctionT.toFixed(2) : entry.AVERAGE_C1SuctionT),\n        \"C1 VOL\": (entry.AVERAGE_C1Vol !== null && entry.AVERAGE_C1Vol !== 0 ? entry.AVERAGE_C1Vol.toFixed(2) : entry.AVERAGE_C1Vol),\n        \"C1 STATUS ON%\": (entry.AVERAGE_C1Status !== null && entry.AVERAGE_C1Status !== 0 ? (entry.AVERAGE_C1Status*100).toFixed(2) : entry.AVERAGE_C1Status),\n        \"C1 OIL FEED PRESSURE\": (entry.AVERAGE_C1OilFeedP !== null && entry.AVERAGE_C1OilFeedP !== 0 ? entry.AVERAGE_C1OilFeedP.toFixed(2) : entry.AVERAGE_C1OilFeedP),\n\n        \"C2 CONDENSER P\": (entry.AVERAGE_C2CondenserP !== null && entry.AVERAGE_C2CondenserP !== 0 ? entry.AVERAGE_C2CondenserP.toFixed(2) : entry.AVERAGE_C2CondenserP),\n        \"C2 CONDENSER T\": (entry.AVERAGE_C2CondenserT !== null && entry.AVERAGE_C2CondenserT !== 0 ? entry.AVERAGE_C2CondenserT.toFixed(2) : entry.AVERAGE_C2CondenserT),\n        \"C2 CURRENT\": (entry.AVERAGE_C2Curr !== null && entry.AVERAGE_C2Curr !== 0 ? entry.AVERAGE_C2Curr.toFixed(2) : entry.AVERAGE_C2Curr),\n        \"C2 DISCHARGE T\": (entry.AVERAGE_C2DischargeT !== null && entry.AVERAGE_C2DischargeT !== 0 ? entry.AVERAGE_C2DischargeT.toFixed(2) : entry.AVERAGE_C2DischargeT),\n        \"C2 EVAPORATOR P\": (entry.AVERAGE_C2EvaporatorP !== null && entry.AVERAGE_C2EvaporatorP !== 0 ? entry.AVERAGE_C2EvaporatorP.toFixed(2) : entry.AVERAGE_C2EvaporatorP),\n        \"C2 EVAPORATOR T\": (entry.AVERAGE_C2EvaporatorT !== null && entry.AVERAGE_C2EvaporatorT !== 0 ? entry.AVERAGE_C2EvaporatorT.toFixed(2) : entry.AVERAGE_C2EvaporatorT),\n        \"C2 POWER\": (entry.AVERAGE_C2Pow !== null && entry.AVERAGE_C2Pow !== 0 ? entry.AVERAGE_C2Pow.toFixed(2) : entry.AVERAGE_C2Pow),\n        \"C2 RLA\": (entry.AVERAGE_C2RLA !== null && entry.AVERAGE_C2RLA !== 0 ? entry.AVERAGE_C2RLA.toFixed(2) : entry.AVERAGE_C2RLA),\n        \"C2 SUCTION T\": (entry.AVERAGE_C2SuctionT !== null && entry.AVERAGE_C2SuctionT !== 0 ? entry.AVERAGE_C2SuctionT.toFixed(2) : entry.AVERAGE_C2SuctionT),\n        \"C2 VOL\": (entry.AVERAGE_C2Vol !== null && entry.AVERAGE_C2Vol !== 0 ? entry.AVERAGE_C2Vol.toFixed(2) : entry.AVERAGE_C2Vol),\n        \"C2 STATUS ON%\": (entry.AVERAGE_C2Status !== null && entry.AVERAGE_C2Status !== 0 ? (entry.AVERAGE_C2Status*100).toFixed(2) : entry.AVERAGE_C2Status),\n        \"C2 OIL FEED PRESSURE\": (entry.AVERAGE_C2OilFeedP !== null && entry.AVERAGE_C2OilFeedP !== 0 ? entry.AVERAGE_C2OilFeedP.toFixed(2) : entry.AVERAGE_C2OilFeedP),\n\n        //\"COOL SPN\": entry.AVERAGE_CoolSPN,\n        \"CURRENT\": (entry.AVERAGE_Current !== null && entry.AVERAGE_Current !== 0 ? entry.AVERAGE_Current.toFixed(2) : entry.AVERAGE_Current),\n        \"LOCAL REMOTE\": entry.AVERAGE_LocalRemote,\n        \"SET POINT\": entry.AVERAGE_SetPoint,\n        'UNIT ID': entry.UnitID\n        \n    };\n});\n\nmsg.payload = processedData;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 380,
+        "wires": [
+            [
+                "9e1aac1b3d5da317",
+                "41c528ef7d775266"
+            ]
+        ]
+    },
+    {
+        "id": "6fe5a70ca73a77ae",
+        "type": "switch",
+        "z": "d57bfbe67600b89c",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "ENERGY",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 530,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9347ac5f5bd9de44",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "function 115",
+        "func": "msg.payload = [];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1730,
+        "y": 480,
+        "wires": [
+            [
+                "9e1aac1b3d5da317"
+            ]
+        ]
+    },
+    {
+        "id": "427f62c2e33a84b3",
+        "type": "debug",
+        "z": "d57bfbe67600b89c",
+        "name": "debug 109",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1130,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "fb10ded4ce75b9fa",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "function 116",
+        "func": "let fromDate = new Date(msg.payload.fromdate);\nlet fromTime = new Date(msg.payload.fromtime);\nlet toDate = new Date(msg.payload.todate);\nlet toTime = new Date(msg.payload.totime);\n\nlet a = new Date(fromDate.getFullYear(), fromDate.getMonth(), fromDate.getDate(), fromTime.getHours(), fromTime.getMinutes(), fromTime.getSeconds());\nlet b = new Date(toDate.getFullYear(), toDate.getMonth(), toDate.getDate(), toTime.getHours(), toTime.getMinutes(), toTime.getSeconds());\n\nif(flow.get('query').uId === \"ENERGYFULL\"){\n   \n    msg.query = \"SELECT MAX(ActiveEnergyD) - MIN(ActiveEnergyD) AS EBConsumption,MAX(ActiveEnergyR) - MIN(ActiveEnergyR) AS DGConsumption, MAX(ActiveEnergyD) AS EBReading, MAX(ActiveEnergyR) AS DGReading,MEAN(*) AS AVERAGE FROM \" + flow.get('query').uId +\n        \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\'  GROUP BY \\\"UnitID\\\" \" + flow.get('query').timegroup;\n}\n\nelse if (flow.get('query').uId === \"HTPENERGYFULL\") {\n\n    msg.query = \"SELECT MAX(ActiveEnergyD) - MIN(ActiveEnergyD) AS EBConsumption,MAX(ActiveEnergyR) - MIN(ActiveEnergyR) AS DGConsumption, MAX(ActiveEnergyD) AS EBReading, MAX(ActiveEnergyR) AS DGReading,MEAN(*) AS AVERAGE  FROM \" + flow.get('query').uId +\n        \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\'  GROUP BY \\\"Name\\\" \" + flow.get('query').timegroup;\n}\n\nelse if (flow.get('query').uId === \"LTKIOSKENERGYFULL\") {\n\n    msg.query = \"SELECT MAX(ActiveEnergyD) - MIN(ActiveEnergyD) AS EBConsumption,MAX(ActiveEnergyR) - MIN(ActiveEnergyR) AS DGConsumption, MAX(ActiveEnergyD) AS EBReading, MAX(ActiveEnergyR) AS DGReading,MEAN(*) AS AVERAGE  FROM \" + flow.get('query').uId +\n        \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\'  GROUP BY \\\"UnitID\\\" \" + flow.get('query').timegroup;\n}\n\nelse if (flow.get('query').uId === \"CHILLERFULL\") {\n\n        msg.query = \"SELECT MEAN(*) AS AVERAGE  FROM \" + flow.get('query').uId +\n            \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\'  GROUP BY \\\"UnitID\\\" \" + flow.get('query').timegroup;\n    }\n\nelse if (flow.get('query').uId === \"PDUFULL\") {\n\n    msg.query = \"SELECT MEAN(*) AS _  FROM \" + flow.get('query').uId +\n        \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\'  GROUP BY \\\"UnitID\\\" \" + flow.get('query').timegroup;\n}\n\nelse if (flow.get('query').uId === \"UPSFULL\") {\n\n    msg.query = \"SELECT MEAN(*) AS AVERAGE  FROM \" + flow.get('query').uId +\n        \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\'  GROUP BY \\\"UnitID\\\" \" + flow.get('query').timegroup;\n}\n\nelse if (flow.get('query').uId === \"DGFULL\") {\n\n    msg.query = \"SELECT MEAN(*) AS AVERAGE  FROM \" + flow.get('query').uId +\n        \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\'  GROUP BY \\\"UnitID\\\" \" + flow.get('query').timegroup;\n}\n\nelse if (flow.get('query').uId === \"PACDATA2FULL\") {\n\n    msg.query = \"SELECT MEAN(*) AS AVERAGE  FROM \" + flow.get('query').uId +\n        \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\'  GROUP BY \\\"UnitID\\\" \" + flow.get('query').timegroup;\n}\n\nelse if (flow.get('query').uId === \"BMSENERGYFULL\") {\n\n    msg.query = \"SELECT MAX(ActiveEnergyD) - MIN(ActiveEnergyD) AS EBConsumption,MAX(ActiveEnergyR) - MIN(ActiveEnergyR) AS DGConsumption, MAX(ActiveEnergyD) AS EBReading, MAX(ActiveEnergyR) AS DGReading,MEAN(*) AS AVERAGE  FROM \" + flow.get('query').uId +\n        \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\'  GROUP BY \\\"UnitID\\\" \" + flow.get('query').timegroup;\n}\n\nelse if (flow.get('query').uId === \"BMSAHCSUFULL\") {\n\n    msg.query = \"SELECT MEAN(*) AS AVERAGE  FROM \" + flow.get('query').uId +\n        \" WHERE time >= \\'\" + a.toISOString() + \"\\' AND time < \\'\" + b.toISOString() + \"\\'  GROUP BY \\\"UnitID\\\" \" + flow.get('query').timegroup;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 360,
+        "wires": [
+            [
+                "dc05104bc7b63291",
+                "c9e36655bd989357"
+            ]
+        ]
+    },
+    {
+        "id": "d8254186a661e60b",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "function 106",
+        "func": "// Retrieve the incoming message payload\nvar data = msg.payload;\n\n// Process the data\nvar processedData = data.map(function(entry) {\n \n    return {\n      'TIME': entry.time,\n      'EB CONSUMPTION (KWH)': (entry.EBConsumption !== null && entry.EBConsumption !== 0 ? (entry.EBConsumption / 1000).toFixed(2) : entry.EBConsumption),\n      'DG CONSUMPTION (KWH)': (entry.DGConsumption !== null && entry.DGConsumption !== 0 ? (entry.DGConsumption / 1000).toFixed(2) : entry.DGConsumption),\n      'UNIT ID': entry.UnitID\n    };\n  \n});\n\n// Set the processed data as the new payload\nmsg.payload = processedData;\n\n// Return the modified message\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1470,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0e7d532ad1fb8ca9",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "ht panel",
+        "func": "// Retrieve the incoming message payload\nvar data = msg.payload;\n\nfor (let i = 0; i < data.length; i++) {\n    const object = data[i];\n    for (const prop in object) {\n        if (object.hasOwnProperty(prop) && prop.includes(\"PowerFactor\")) {\n            if (object[prop] > 1) {\n                object[prop] = 2 - object[prop];\n            } else if (object[prop] < -1) {\n                object[prop] = -2 - object[prop];\n            }\n        }\n    }\n}\n\n// Process the data\nvar processedData = data.map(function (entry) {\n    return {\n        'TIME': entry.time,\n        'EB CONSUMPTION (KWH)': ((entry.EBConsumption !== null && entry.EBConsumption !== 0 ? (entry.EBConsumption / 1000).toFixed(2) : entry.EBConsumption))/1,\n        'DG CONSUMPTION (KWH)': ((entry.DGConsumption !== null && entry.DGConsumption !== 0 ? (entry.DGConsumption / 1000).toFixed(2) : entry.DGConsumption))/1,\n        \"EB READING (KWH)\": (entry.EBReading !== null && entry.EBReading !== 0 ? (entry.EBReading / 1000).toFixed(2) : entry.EBReading),\n        \"DG READING (KWH)\": (entry.DGReading !== null && entry.DGReading !== 0 ? (entry.DGReading / 1000).toFixed(2) : entry.DGReading),\n       // 'ACTIVE ENERGY D (KWH)': (entry.AVERAGE_ActiveEnergyD !== null && entry.AVERAGE_ActiveEnergyD !== 0 ? (entry.AVERAGE_ActiveEnergyD / 1000).toFixed(2) : entry.AVERAGE_ActiveEnergyD),\n       // 'ACTIVE ENERGY DPR (KWH)': (entry.AVERAGE_ActiveEnergyDPR !== null && entry.AVERAGE_ActiveEnergyDPR !== 0 ? (entry.AVERAGE_ActiveEnergyDPR / 1000).toFixed(2) : entry.AVERAGE_ActiveEnergyDPR),\n        //'ACTIVE ENERGY R (KWH)': (entry.AVERAGE_ActiveEnergyR !== null && entry.AVERAGE_ActiveEnergyR !== 0 ? (entry.AVERAGE_ActiveEnergyR / 1000).toFixed(2) : entry.AVERAGE_ActiveEnergyR),\n        'ACTIVE POWER A (KW)': (entry.AVERAGE_ActivePowerA !== null && entry.AVERAGE_ActivePowerA !== 0 ? (entry.AVERAGE_ActivePowerA / 1).toFixed(2) : entry.AVERAGE_ActivePowerA),\n        'ACTIVE POWER B (KW)': (entry.AVERAGE_ActivePowerB !== null && entry.AVERAGE_ActivePowerB !== 0 ? (entry.AVERAGE_ActivePowerB / 1).toFixed(2) : entry.AVERAGE_ActivePowerB),\n        'ACTIVE POWER C (KW)': (entry.AVERAGE_ActivePowerC !== null && entry.AVERAGE_ActivePowerC !== 0 ? (entry.AVERAGE_ActivePowerC / 1).toFixed(2) : entry.AVERAGE_ActivePowerC),\n        'ACTIVE POWER T (KW)': (entry.AVERAGE_ActivePowerT !== null && entry.AVERAGE_ActivePowerT !== 0 ? (entry.AVERAGE_ActivePowerT / 1).toFixed(2) : entry.AVERAGE_ActivePowerT),\n        // 'CURRENT UNBALANCE A': entry.AVERAGE_CurrUnbalanceA,\n        // 'CURRENT UNBALANCE B': entry.AVERAGE_CurrUnbalanceB,\n        // 'CURRENT UNBALANCE C': entry.AVERAGE_CurrUnbalanceC,\n       // 'CURRENT UNBALANCE WORST': entry.AVERAGE_CurrUnbalanceWorst,\n        'CURRENT A (A)': (entry.AVERAGE_CurrentA !== null && entry.AVERAGE_CurrentA !== 0 ? entry.AVERAGE_CurrentA.toFixed(2) : entry.AVERAGE_CurrentA),\n        'CURRENT AVG (A)': (entry.AVERAGE_CurrentAvg !== null && entry.AVERAGE_CurrentAvg !== 0 ? entry.AVERAGE_CurrentAvg.toFixed(2) : entry.AVERAGE_CurrentAvg),\n        'CURRENT B (A)': (entry.AVERAGE_CurrentB !== null && entry.AVERAGE_CurrentB !== 0 ? entry.AVERAGE_CurrentB.toFixed(2) : entry.AVERAGE_CurrentB),\n        'CURRENT C (A)': (entry.AVERAGE_CurrentC !== null && entry.AVERAGE_CurrentC !== 0 ? entry.AVERAGE_CurrentC.toFixed(2) : entry.AVERAGE_CurrentC),\n        'CURRENT N (A)': (entry.AVERAGE_CurrentN !== null && entry.AVERAGE_CurrentN !== 0 ? entry.AVERAGE_CurrentN.toFixed(2) : entry.AVERAGE_CurrentN),\n        'FREQUENCY (Hz)': (entry.AVERAGE_Frequency !== null && entry.AVERAGE_Frequency !== 0 ? entry.AVERAGE_Frequency.toFixed(2) : entry.AVERAGE_Frequency),\n        'POWER FACTOR A': (entry.AVERAGE_PowerFactorA !== null && entry.AVERAGE_PowerFactorA !== 0 ? entry.AVERAGE_PowerFactorA.toFixed(2) : entry.AVERAGE_PowerFactorA),\n        'POWER FACTOR B': (entry.AVERAGE_PowerFactorB !== null && entry.AVERAGE_PowerFactorB !== 0 ? entry.AVERAGE_PowerFactorB.toFixed(2) : entry.AVERAGE_PowerFactorB),\n        'POWER FACTOR C': (entry.AVERAGE_PowerFactorC !== null && entry.AVERAGE_PowerFactorC !== 0 ? entry.AVERAGE_PowerFactorC.toFixed(2) : entry.AVERAGE_PowerFactorC),\n        'POWER FACTOR T': (entry.AVERAGE_PowerFactorT !== null && entry.AVERAGE_PowerFactorT !== 0 ? entry.AVERAGE_PowerFactorT.toFixed(2) : entry.AVERAGE_PowerFactorT),\n       \n        // 'VOLTAGE UNBALANCE AB': entry.AVERAGE_VolUnbalanceAB,\n        // 'VOLTAGE UNBALANCE AN': entry.AVERAGE_VolUnbalanceAN,\n        // 'VOLTAGE UNBALANCE AN/BN': entry.AVERAGE_VolUnbalanceANVolUnbalanceBN,\n        // 'VOLTAGE UNBALANCE BC': entry.AVERAGE_VolUnbalanceBC,\n        // 'VOLTAGE UNBALANCE CA': entry.AVERAGE_VolUnbalanceCA,\n        // 'VOLTAGE UNBALANCE CN': entry.AVERAGE_VolUnbalanceCN,\n        // 'VOLTAGE UNBALANCE LL/W': entry.AVERAGE_VolUnbalanceLLW,\n        // 'VOLTAGE UNBALANCE LN/W': entry.AVERAGE_VolUnbalanceLNW,\n        'VOLTAGE AB (V)': (entry.AVERAGE_VoltageAB !== null && entry.AVERAGE_VoltageAB !== 0 ? (entry.AVERAGE_VoltageAB*1000).toFixed(2) : entry.AVERAGE_VoltageAB),\n        //'VOLTAGE AN (V)': (entry.AVERAGE_VoltageAN !== null && entry.AVERAGE_VoltageAN !== 0 ? (entry.AVERAGE_VoltageAN*1000).toFixed(2) : entry.AVERAGE_VoltageAN),\n        'VOLTAGE BC (V)': (entry.AVERAGE_VoltageBC !== null && entry.AVERAGE_VoltageBC !== 0 ? (entry.AVERAGE_VoltageBC*1000).toFixed(2) : entry.AVERAGE_VoltageBC),\n//'VOLTAGE BN (V)': (entry.AVERAGE_VoltageBN !== null && entry.AVERAGE_VoltageBN !== 0 ? (entry.AVERAGE_VoltageBN*1000).toFixed(2) : entry.AVERAGE_VoltageBN),\n'VOLTAGE CA (V)': (entry.AVERAGE_VoltageCA !== null && entry.AVERAGE_VoltageCA !== 0 ? (entry.AVERAGE_VoltageCA * 1000).toFixed(2) : entry.AVERAGE_VoltageCA),\n//'VOLTAGE CN (V)': (entry.AVERAGE_VoltageCN !== null && entry.AVERAGE_VoltageCN !== 0 ? (entry.AVERAGE_VoltageCN * 1000).toFixed(2) : entry.AVERAGE_VoltageCN),\n//'VOLTAGE LL (V)': (entry.AVERAGE_VoltageLL !== null && entry.AVERAGE_VoltageLL !== 0 ? (entry.AVERAGE_VoltageLL * 1000).toFixed(2) : entry.AVERAGE_VoltageLL),\n//'VOLTAGE LN (V)': (entry.AVERAGE_VoltageLN !== null && entry.AVERAGE_VoltageLN !== 0 ? (entry.AVERAGE_VoltageLN * 1000).toFixed(2) : entry.AVERAGE_VoltageLN),\n        'UnitID': entry.UnitID,\n        'Name' : entry.Name\n    };\n});\n\n// Set the processed data as the new payload\nmsg.payload = processedData;\n\n// Return the modified message\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 420,
+        "wires": [
+            [
+                "9e1aac1b3d5da317",
+                "41c528ef7d775266"
+            ]
+        ]
+    },
+    {
+        "id": "f071b6afc250350a",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "lt kiosk",
+        "func": "// Retrieve the incoming message payload\nvar data = msg.payload;\n\nvar meterNames = [\"None\",//0\n    \"LTKIOSK3_INCOMER3\",//1\n    \"LTKIOSK4_FIRE\",//2\n    \"LTKIOSK4_INCOMER4\",//3\n    \"LTKIOSK4_FULL\"//4\n];\n\nfor (let i = 0; i < data.length; i++) {\n    const object = data[i];\n    for (const prop in object) {\n        if (object.hasOwnProperty(prop) && prop.includes(\"PowerFactor\")) {\n            if (object[prop] > 1) {\n                object[prop] = 2 - object[prop];\n            } else if (object[prop] < -1) {\n                object[prop] = -2 - object[prop];\n            }\n        }\n    }\n}\n\n// Process the data\nvar processedData = data.map(function (entry) {\n    return {\n        'MeterName': meterNames[entry.UnitID],\n        'TIME': entry.time,\n        'EB CONSUMPTION (KWH)': (entry.EBConsumption !== null && entry.EBConsumption !== 0 ? (entry.EBConsumption / 1000).toFixed(2) : entry.EBConsumption),\n        'DG CONSUMPTION (KWH)': (entry.DGConsumption !== null && entry.DGConsumption !== 0 ? (entry.DGConsumption / 1000).toFixed(2) : entry.DGConsumption),\n        \"EB READING (KWH)\": (entry.EBReading !== null && entry.EBReading !== 0 ? (entry.EBReading / 1000).toFixed(2) : entry.EBReading),\n        \"DG READING (KWH)\": (entry.DGReading !== null && entry.DGReading !== 0 ? (entry.DGReading / 1000).toFixed(2) : entry.DGReading),\n        //'ACTIVE ENERGY D (KWH)': (entry.AVERAGE_ActiveEnergyD !== null && entry.AVERAGE_ActiveEnergyD !== 0 ? (entry.AVERAGE_ActiveEnergyD / 1000).toFixed(2) : entry.AVERAGE_ActiveEnergyD),\n       // 'ACTIVE ENERGY DPR (KWH)': (entry.AVERAGE_ActiveEnergyDPR !== null && entry.AVERAGE_ActiveEnergyDPR !== 0 ? (entry.AVERAGE_ActiveEnergyDPR / 1000).toFixed(2) : entry.AVERAGE_ActiveEnergyDPR),\n        //'ACTIVE ENERGY R (KWH)': (entry.AVERAGE_ActiveEnergyR !== null && entry.AVERAGE_ActiveEnergyR !== 0 ? (entry.AVERAGE_ActiveEnergyR / 1000).toFixed(2) : entry.AVERAGE_ActiveEnergyR),\n        'ACTIVE POWER A (KW)': (entry.AVERAGE_ActivePowerA !== null && entry.AVERAGE_ActivePowerA !== 0 ? (entry.AVERAGE_ActivePowerA / 1).toFixed(2) : entry.AVERAGE_ActivePowerA),\n        'ACTIVE POWER B (KW)': (entry.AVERAGE_ActivePowerB !== null && entry.AVERAGE_ActivePowerB !== 0 ? (entry.AVERAGE_ActivePowerB / 1).toFixed(2) : entry.AVERAGE_ActivePowerB),\n        'ACTIVE POWER C (KW)': (entry.AVERAGE_ActivePowerC !== null && entry.AVERAGE_ActivePowerC !== 0 ? (entry.AVERAGE_ActivePowerC / 1).toFixed(2) : entry.AVERAGE_ActivePowerC),\n        'ACTIVE POWER T (KW)': (entry.AVERAGE_ActivePowerT !== null && entry.AVERAGE_ActivePowerT !== 0 ? (entry.AVERAGE_ActivePowerT / 1).toFixed(2) : entry.AVERAGE_ActivePowerT),\n        // 'CURRENT UNBALANCE A': entry.AVERAGE_CurrUnbalanceA,\n        // 'CURRENT UNBALANCE B': entry.AVERAGE_CurrUnbalanceB,\n        // 'CURRENT UNBALANCE C': entry.AVERAGE_CurrUnbalanceC,\n        'CURRENT UNBALANCE WORST': entry.AVERAGE_CurrUnbalanceWorst,\n        'CURRENT A (A)': (entry.AVERAGE_CurrentA !== null && entry.AVERAGE_CurrentA !== 0 ? entry.AVERAGE_CurrentA.toFixed(2) : entry.AVERAGE_CurrentA),\n        'CURRENT AVG (A)': (entry.AVERAGE_CurrentAvg !== null && entry.AVERAGE_CurrentAvg !== 0 ? entry.AVERAGE_CurrentAvg.toFixed(2) : entry.AVERAGE_CurrentAvg),\n        'CURRENT B (A)': (entry.AVERAGE_CurrentB !== null && entry.AVERAGE_CurrentB !== 0 ? entry.AVERAGE_CurrentB.toFixed(2) : entry.AVERAGE_CurrentB),\n        'CURRENT C (A)': (entry.AVERAGE_CurrentC !== null && entry.AVERAGE_CurrentC !== 0 ? entry.AVERAGE_CurrentC.toFixed(2) : entry.AVERAGE_CurrentC),\n        'CURRENT N (A)': (entry.AVERAGE_CurrentN !== null && entry.AVERAGE_CurrentN !== 0 ? entry.AVERAGE_CurrentN.toFixed(2) : entry.AVERAGE_CurrentN),\n        'FREQUENCY (Hz)': (entry.AVERAGE_Frequency !== null && entry.AVERAGE_Frequency !== 0 ? entry.AVERAGE_Frequency.toFixed(2) : entry.AVERAGE_Frequency),\n        'POWER FACTOR A': (entry.AVERAGE_PowerFactorA !== null && entry.AVERAGE_PowerFactorA !== 0 ? entry.AVERAGE_PowerFactorA.toFixed(2) : entry.AVERAGE_PowerFactorA),\n        'POWER FACTOR B': (entry.AVERAGE_PowerFactorB !== null && entry.AVERAGE_PowerFactorB !== 0 ? entry.AVERAGE_PowerFactorB.toFixed(2) : entry.AVERAGE_PowerFactorB),\n        'POWER FACTOR C': (entry.AVERAGE_PowerFactorC !== null && entry.AVERAGE_PowerFactorC !== 0 ? entry.AVERAGE_PowerFactorC.toFixed(2) : entry.AVERAGE_PowerFactorC),\n        'POWER FACTOR T': (entry.AVERAGE_PowerFactorT !== null && entry.AVERAGE_PowerFactorT !== 0 ? entry.AVERAGE_PowerFactorT.toFixed(2) : entry.AVERAGE_PowerFactorT),\n       // 'TIMESTAMP': entry.AVERAGE_TIMESTAMP,\n        //'UNIT ID': entry.AVERAGE_UnitID,\n        // 'VOLTAGE UNBALANCE AB': entry.AVERAGE_VolUnbalanceAB,\n        // 'VOLTAGE UNBALANCE AN': entry.AVERAGE_VolUnbalanceAN,\n        // 'VOLTAGE UNBALANCE AN/BN': entry.AVERAGE_VolUnbalanceANVolUnbalanceBN,\n        // 'VOLTAGE UNBALANCE BC': entry.AVERAGE_VolUnbalanceBC,\n        // 'VOLTAGE UNBALANCE CA': entry.AVERAGE_VolUnbalanceCA,\n        // 'VOLTAGE UNBALANCE CN': entry.AVERAGE_VolUnbalanceCN,\n        // 'VOLTAGE UNBALANCE LL/W': entry.AVERAGE_VolUnbalanceLLW,\n        // 'VOLTAGE UNBALANCE LN/W': entry.AVERAGE_VolUnbalanceLNW,\n        'VOLTAGE AB (V)': (entry.AVERAGE_VoltageAB !== null && entry.AVERAGE_VoltageAB !== 0 ? entry.AVERAGE_VoltageAB.toFixed(2) : entry.AVERAGE_VoltageAB)*1000,\n        'VOLTAGE AN (V)': (entry.AVERAGE_VoltageAN !== null && entry.AVERAGE_VoltageAN !== 0 ? entry.AVERAGE_VoltageAN.toFixed(2) : entry.AVERAGE_VoltageAN)*1000,\n        'VOLTAGE BC (V)': (entry.AVERAGE_VoltageBC !== null && entry.AVERAGE_VoltageBC !== 0 ? entry.AVERAGE_VoltageBC.toFixed(2) : entry.AVERAGE_VoltageBC)*1000,\n        'VOLTAGE BN (V)': (entry.AVERAGE_VoltageBN !== null && entry.AVERAGE_VoltageBN !== 0 ? entry.AVERAGE_VoltageBN.toFixed(2) : entry.AVERAGE_VoltageBN)*1000,\n        'VOLTAGE CA (V)': (entry.AVERAGE_VoltageCA !== null && entry.AVERAGE_VoltageCA !== 0 ? entry.AVERAGE_VoltageCA.toFixed(2) : entry.AVERAGE_VoltageCA)*1000,\n        'VOLTAGE CN (V)': (entry.AVERAGE_VoltageCN !== null && entry.AVERAGE_VoltageCN !== 0 ? entry.AVERAGE_VoltageCN.toFixed(2) : entry.AVERAGE_VoltageCN)*1000,\n        'VOLTAGE LL (V)': (entry.AVERAGE_VoltageLL !== null && entry.AVERAGE_VoltageLL !== 0 ? entry.AVERAGE_VoltageLL.toFixed(2) : entry.AVERAGE_VoltageLL)*1000,\n        'VOLTAGE LN (V)': (entry.AVERAGE_VoltageLN !== null && entry.AVERAGE_VoltageLN !== 0 ? entry.AVERAGE_VoltageLN.toFixed(2) : entry.AVERAGE_VoltageLN)*1000,\n        'UnitID': entry.UnitID,\n    };\n});\n\n// Set the processed data as the new payload\nmsg.payload = processedData;\n\n// Return the modified message\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 460,
+        "wires": [
+            [
+                "9e1aac1b3d5da317",
+                "41c528ef7d775266"
+            ]
+        ]
+    },
+    {
+        "id": "896535090929b107",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "function 119",
+        "func": "msg.query = \"SELECT MEAN(*) AS AVERAGE  FROM BMSAHCSUFULL WHERE time >= '2023-08-29T11:34:00.000Z' AND time < '2023-08-31T04:34:00.000Z'  GROUP BY \\\"UnitID\\\", time(1h, -5h30m)\"\n//msg.query = \"SELECT * FROM BMSAHCSUFULL WHERE time >= '2023-08-29T11:34:00.000Z' AND time < '2023-08-30T04:34:00.000Z'  GROUP BY \\\"UnitID\\\", time(1h, -5h30m)\"\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 80,
+        "wires": [
+            [
+                "8e4b8b0d0cac3988"
+            ]
+        ]
+    },
+    {
+        "id": "e547340f46c4250f",
+        "type": "inject",
+        "z": "d57bfbe67600b89c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 840,
+        "y": 40,
+        "wires": [
+            [
+                "896535090929b107"
+            ]
+        ]
+    },
+    {
+        "id": "8e4b8b0d0cac3988",
+        "type": "influxdb in",
+        "z": "d57bfbe67600b89c",
+        "influxdb": "8eeaa29da50ee831",
+        "name": "Energy",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 820,
+        "y": 120,
+        "wires": [
+            [
+                "427f62c2e33a84b3"
+            ]
+        ]
+    },
+    {
+        "id": "bf661980301dcc72",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "ups",
+        "func": "// Retrieve the incoming message payload (array of objects)\nvar dataArray = msg.payload;\n\n// Process each object in the array\nvar processedData = dataArray.map(function (entry) {\n    return {\n        'TIME': entry.time,\n        \"ACTUAL CAPACITY\": (entry.AVERAGE_BatteryCap !== null && entry.AVERAGE_BatteryCap !== 0 ? entry.AVERAGE_BatteryCap.toFixed(2) : entry.AVERAGE_BatteryCap),\n        \"BATTERY RT\": (entry.AVERAGE_BatteryRT !== null && entry.AVERAGE_BatteryRT !== 0 ? entry.AVERAGE_BatteryRT.toFixed(2) : entry.AVERAGE_BatteryRT),\n        \"BATTERY CURRENT\": (entry.AVERAGE_BatteryCurr !== null && entry.AVERAGE_BatteryCurr !== 0 ? entry.AVERAGE_BatteryCurr.toFixed(2) : entry.AVERAGE_BatteryCurr),\n        \"BATTERY WARNING\": entry.AVERAGE_BatteryWarn,\n        \"BATTERY SOURCE\": entry.AVERAGE_BatterySource,\n        \"BATTERY VOLTAGE\": entry.AVERAGE_BatteryVol,\n        \"BYPASS CURRENT 1\": (entry.AVERAGE_BypCur1 !== null && entry.AVERAGE_BypCur1 !== 0 ? entry.AVERAGE_BypCur1.toFixed(2) : entry.AVERAGE_BypCur1),\n        \"BYPASS CURRENT 2\": (entry.AVERAGE_BypCur2 !== null && entry.AVERAGE_BypCur2 !== 0 ? entry.AVERAGE_BypCur2.toFixed(2) : entry.AVERAGE_BypCur2),\n        \"BYPASS CURRENT 3\": (entry.AVERAGE_BypCur3 !== null && entry.AVERAGE_BypCur3 !== 0 ? entry.AVERAGE_BypCur3.toFixed(2) : entry.AVERAGE_BypCur3),\n        \"BYPASS FREQUENCY\": entry.AVERAGE_BypFre,\n        \"BYPASS POWER\": entry.AVERAGE_BypPow,\n        \"BYPASS VOLTAGE 1\": entry.AVERAGE_BypVol1,\n        \"BYPASS VOLTAGE 2\": entry.AVERAGE_BypVol2,\n        \"BYPASS VOLTAGE 3\": entry.AVERAGE_BypVol3,\n        \"CHARGING PERCENTAGE\": entry.AVERAGE_ChargingP,\n       //\"COUNT OOR\": entry.AVERAGE_CountOOR,\n        \"FAILURE DETECTION\": entry.AVERAGE_FailureD,\n        \"FAILURE TIME\": entry.AVERAGE_FailureT,\n        \"INPUT CURRENT 1\": entry.AVERAGE_InpCur1,\n        \"INPUT CURRENT 2\": entry.AVERAGE_InpCur2,\n        \"INPUT CURRENT 3\": entry.AVERAGE_InpCur3,\n        \"INPUT FREQUENCY\": entry.AVERAGE_InpFre,\n        \"INPUT POWER\": entry.AVERAGE_InpPow,\n        \"INPUT VOLTAGE 1\": entry.AVERAGE_InpVol1,\n        \"INPUT VOLTAGE 2\": entry.AVERAGE_InpVol2,\n        \"INPUT VOLTAGE 3\": entry.AVERAGE_InpVol3,\n        \"AVERAGE INPUT CURRENT\": entry.AVERAGE_InputCurrentAvg,\n        \"AVERAGE INPUT VOLTAGE\": entry.AVERAGE_InputVoltageAvg,\n        \"OUTPUT CURRENT 1\": entry.AVERAGE_OutCur1,\n        \"OUTPUT CURRENT 2\": entry.AVERAGE_OutCur2,\n        \"OUTPUT CURRENT 3\": entry.AVERAGE_OutCur3,\n        \"OUTPUT FREQUENCY\": entry.AVERAGE_OutFre,\n        \"OUTPUT LOAD PERCENTAGE\": entry.AVERAGE_OutLoadP,\n        \"OUTPUT LOAD PERCENTAGE 1\": entry.AVERAGE_OutLoadP1,\n        \"OUTPUT LOAD PERCENTAGE 2\": entry.AVERAGE_OutLoadP2,\n        \"OUTPUT LOAD PERCENTAGE 3\": entry.AVERAGE_OutLoadP3,\n        \"OUTPUT POWER\": entry.AVERAGE_OutPow,\n        \"OUTPUT VOLTAGE 1\": entry.AVERAGE_OutVol1,\n        \"OUTPUT VOLTAGE 2\": entry.AVERAGE_OutVol2,\n        \"OUTPUT VOLTAGE 3\": entry.AVERAGE_OutVol3,\n        \"AVERAGE OUTPUT CURRENT\": entry.AVERAGE_OutputCurrentAvg,\n        \"AVERAGE OUTPUT VOLTAGE\": entry.AVERAGE_OutputVoltageAvg,\n        \"RATED CURRENT\": entry.AVERAGE_RatedCurr,\n        \"RUNNING\": (entry.AVERAGE_Running !== null && entry.AVERAGE_Running !== 0 ? entry.AVERAGE_Running.toFixed(2) : entry.AVERAGE_Running),\n        \"STATUS\": entry.AVERAGE_Status,\n        //\"UNIT ID\": entry.AVERAGE_UnitID,\n        //\"LOCAL REMOTE\": entry.AVERAGE_status,\n        //\"SET POINT\": entry.AVERAGE_SetPoint,\n        \"UnitID\": entry.UnitID\n    };\n});\n\n// Set the processed data as the new payload\nmsg.payload = processedData;\n\n// Return the modified message\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 540,
+        "wires": [
+            [
+                "9e1aac1b3d5da317",
+                "41c528ef7d775266"
+            ]
+        ]
+    },
+    {
+        "id": "89f7202b70ad6203",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "dg",
+        "func": "\nvar dataArray = msg.payload;\n\nvar processedData = dataArray.map(function (entry) {\n    return {\n        'TIME': entry.time,\n        \"MACHINE_NAME\": entry.UnitID,\n        \"CONTROL SWITCH POSITION\": entry.AVERAGE_ControlSwitchPos,\n        \"CURRENT A\": entry.AVERAGE_Current_A,\n        \"AVERAGE CURRENT\": entry.AVERAGE_Current_Avg,\n        \"CURRENT B\": entry.AVERAGE_Current_B,\n        \"CURRENT C\": entry.AVERAGE_Current_C,\n        \"FAULT TYPE\": entry.AVERAGE_FaultType,\n        \"FREQUENCY\": entry.AVERAGE_Frequency,\n        \"GENSET L1\": entry.AVERAGE_GensetL1,\n        \"GENSET L2\": entry.AVERAGE_GensetL2,\n        \"GENSET L3\": entry.AVERAGE_GensetL3,\n        \"GENSET TOTAL\": entry.AVERAGE_GensetTotal,\n        \"OUTPUT VA\": entry.AVERAGE_Output_VA,\n        \"VOLTAGE LINE AVG\": entry.AVERAGE_VoltageLineAvg,\n        \"VOLTAGE PHASE AVG\": entry.AVERAGE_VoltagePhaseAvg,\n        \"VOLTAGE A\": entry.AVERAGE_Voltage_A,\n        \"VOLTAGE AB\": entry.AVERAGE_Voltage_AB,\n        \"VOLTAGE B\": entry.AVERAGE_Voltage_B,\n        \"VOLTAGE BC\": entry.AVERAGE_Voltage_BC,\n        \"VOLTAGE C\": entry.AVERAGE_Voltage_C,\n        \"VOLTAGE CA\": entry.AVERAGE_Voltage_CA,\n        \"STATUS\": entry.AVERAGE_status,\n        \"CONTROL BATTERY VOLTAGE\": entry.AVERAGE_ControlBatteryVoltage,\n        \"COOLANT TEMPERATURE\": entry.AVERAGE_CoolantTemp,\n        \"OIL PRESSUE\": entry.AVERAGE_OilPresssure,\n        \"ENGINE SPEED\": entry.AVERAGE_EngineSpeed,\n        \"STARTS\": entry.AVERAGE_Starts,\n        \"OIL TEMPERATURE\": entry.AVERAGE_OilTemperature,\n        \"RUN TIME\": entry.AVERAGE_RunTime,\n       \n       // \"UNIT ID\": entry.UnitID\n    };\n});\n\n// Set the processed data as the new payload\nmsg.payload = processedData;\n\n// Return the modified message\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 580,
+        "wires": [
+            [
+                "9e1aac1b3d5da317",
+                "41c528ef7d775266"
+            ]
+        ]
+    },
+    {
+        "id": "52effe7146da3ae8",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "PAC",
+        "func": "\nvar data = msg.payload;\n\nvar processedData = data.map(function (entry) {\n    var machineName;\n\n    if (entry.UnitID === \"PAC_1_01\") {\n        machineName = \"PAC_1_01\";\n    }\n    else if (entry.UnitID === \"PAC_1_02\") {\n        machineName = \"PAC_1_02\";\n    }\n    else if (entry.UnitID === \"PAC_2_01\") {\n        machineName = \"PAC_2_01\";\n    }\n    else if (entry.UnitID === \"PAC_2_02\") {\n        machineName = \"PAC_2_02\";\n    }\n    else if (entry.UnitID === \"PAC_2_03\") {\n        machineName = \"PAC_2_03\";\n    }\n    else if (entry.UnitID === \"PAC_2_04\") {\n        machineName = \"PAC_2_04\";\n    }\n     else {\n        machineName = \"Unknown\"; // Default value for other cases\n    }\n\n    return {\n        'TIME': entry.time,\n        \"MACHINE_NAME\": machineName,\n        \"AMBIENT HUMIDITY\": entry.AVERAGE_AMBIENT_HUMIDITY.toFixed(2),\n        \"AMBIENT TEMPERATURE\": entry.AVERAGE_AMBIENT_TEMPERATURE.toFixed(2),\n        \"COOLING SET POINT\": entry.AVERAGE_COOLING_SET_POINT.toFixed(2),\n        \"CURRENT\": entry.AVERAGE_CURRENT.toFixed(2),\n        \"FAN SPEED\": entry.AVERAGE_FAN_SPEED.toFixed(2),\n        \"HEATING SET POINT\": entry.AVERAGE_HEATING_SET_POINT.toFixed(2),\n        \"SUCTION TEMPERATURE\": entry.AVERAGE_SUCTION_TEMPERATURE.toFixed(2),\n        \"TIMESTAMP\": entry.AVERAGE_TIMESTAMP.toFixed(2),\n        //\"UNIT ID\": entry.UnitID\n    };\n});\n\nmsg.payload = processedData;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 620,
+        "wires": [
+            [
+                "41c528ef7d775266",
+                "9e1aac1b3d5da317"
+            ]
+        ]
+    },
+    {
+        "id": "c3011a281177504c",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "BMS",
+        "func": "var data = msg.payload;\n\nvar meterNames = [\n    \"None\",\n    \"UPS I/P Source A EM\",\n    \"UPS I/P Source B EM\",\n    \"UPS O/P Source A EM\",\n    \"UPS O/P Source B EM\",\n    \"UPS for Battery Room EM\",\n    \"Main Panel Energy Meter\",\n    \"Main Panel EM\",\n    \"UPS Output Panel EM\",\n    \"Solar Energy Metre\",\n    \"Pump Panel - 1\",\n    \"Chiller 2\",\n    \"Spare\",\n    \"Incomer -1 metering Compartment\",\n    \"Incomer -2 metering Compartment\",\n    \"Chiller 1\",\n    \"Chiller 3\",\n    \"Spare\",\n    \"PAC Panel EM\",\n    \"PAC Spare\",\n    \"GF Electric Panel EM\"\n];\n\n\nfor (let i = 0; i < data.length; i++) {\n    const object = data[i];\n    for (const prop in object) {\n        if (object.hasOwnProperty(prop) && prop.includes(\"PowerFactor\")) {\n            if (object[prop] > 1) {\n                object[prop] = 2 - object[prop];\n            } else if (object[prop] < -1) {\n                object[prop] = -2 - object[prop];\n            }\n        }\n    }\n}\n\nvar processedData = data.map(function (entry) {\n    return {\n        'TIME': entry.time,\n        'MeterName': meterNames[entry.UnitID],\n        \"EB CONSUMPTION\": entry.EBConsumption,\n        \"DG CONSUMPTION\": entry.DGConsumption,\n        \"EB READING\": entry.EBReading,\n        \"DG READING\": entry.DGReading,\n        \"ACTIVE ENERGY D\": entry.AVERAGE_ActiveEnergyD,\n        //\"ACTIVE ENERGY DPR\": entry.AVERAGE_ActiveEnergyDPR,\n        \"ACTIVE ENERGY R\": entry.AVERAGE_ActiveEnergyR,\n        \"ACTIVE POWER A\": entry.AVERAGE_ActivePowerA,\n        \"ACTIVE POWER B\": entry.AVERAGE_ActivePowerB,\n        \"ACTIVE POWER C\": entry.AVERAGE_ActivePowerC,\n        \"ACTIVE POWER T\": entry.AVERAGE_ActivePowerT,\n        //\"CURRENT UNBALANCE A\": entry.AVERAGE_CurrUnbalanceA,\n        //\"CURRENT UNBALANCE B\": entry.AVERAGE_CurrUnbalanceB,\n        //\"CURRENT UNBALANCE C\": entry.AVERAGE_CurrUnbalanceC,\n        //\"CURRENT UNBALANCE WORST\": entry.AVERAGE_CurrUnbalanceWorst,\n        \"CURRENT A\": entry.AVERAGE_CurrentA,\n        \"AVERAGE CURRENT\": entry.AVERAGE_CurrentAvg,\n        \"CURRENT B\": entry.AVERAGE_CurrentB,\n        \"CURRENT C\": entry.AVERAGE_CurrentC,\n        \"CURRENT N\": entry.AVERAGE_CurrentN,\n        \"FREQUENCY\": entry.AVERAGE_Frequency,\n        \"POWER FACTOR A\": entry.AVERAGE_PowerFactorA,\n        \"POWER FACTOR B\": entry.AVERAGE_PowerFactorB,\n        \"POWER FACTOR C\": entry.AVERAGE_PowerFactorC,\n        \"POWER FACTOR T\": entry.AVERAGE_PowerFactorT,\n        //\"TIMESTAMP\": entry.AVERAGE_TIMESTAMP,\n       // \"VOLTAGE UNBALANCE AB\": entry.AVERAGE_VolUnbalanceAB,\n       // \"VOLTAGE UNBALANCE AN\": entry.AVERAGE_VolUnbalanceAN,\n       // \"VOLTAGE UNBALANCE AN VOL UNBALANCE BN\": entry.AVERAGE_VolUnbalanceANVolUnbalanceBN,\n       // \"VOLTAGE UNBALANCE BC\": entry.AVERAGE_VolUnbalanceBC,\n       // \"VOLTAGE UNBALANCE CA\": entry.AVERAGE_VolUnbalanceCA,\n       // \"VOLTAGE UNBALANCE CN\": entry.AVERAGE_VolUnbalanceCN,\n       // \"VOLTAGE UNBALANCE LLW\": entry.AVERAGE_VolUnbalanceLLW,\n        //\"VOLTAGE UNBALANCE LNW\": entry.AVERAGE_VolUnbalanceLNW,\n        \"VOLTAGE AB\": entry.AVERAGE_VoltageAB,\n        \"VOLTAGE AN\": entry.AVERAGE_VoltageAN,\n        \"VOLTAGE BC\": entry.AVERAGE_VoltageBC,\n        \"VOLTAGE BN\": entry.AVERAGE_VoltageBN,\n        \"VOLTAGE CA\": entry.AVERAGE_VoltageCA,\n        \"VOLTAGE CN\": entry.AVERAGE_VoltageCN,\n        \"VOLTAGE LL\": entry.AVERAGE_VoltageLL,\n        \"VOLTAGE LN\": entry.AVERAGE_VoltageLN,\n        \"UNIT ID\": entry.UnitID\n    };\n});\n\n// Set the processed data as the new payload\nmsg.payload = processedData;\n\n// Return the modified message\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 660,
+        "wires": [
+            [
+                "9e1aac1b3d5da317",
+                "41c528ef7d775266"
+            ]
+        ]
+    },
+    {
+        "id": "99a79eac5ff4ed6f",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "pdu",
+        "func": "\n// Retrieve the incoming message payload\nvar data = msg.payload;\n\n// Process the data\nvar processedData = data.map(function (entry) {\n    var processedEntry = {};\n    for (var key in entry) {\n        if (entry.hasOwnProperty(key)) {\n            if (typeof entry[key] === 'number') {\n                processedEntry[key] = entry[key].toFixed(2);\n            } else {\n                processedEntry[key] = entry[key];\n            }\n        }\n    }\n    return processedEntry;\n});\n\n// Set the processed data as the new payload\nmsg.payload = processedData;\n\n// Return the modified message\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 500,
+        "wires": [
+            [
+                "9e1aac1b3d5da317",
+                "41c528ef7d775266"
+            ]
+        ]
+    },
+    {
+        "id": "c9e36655bd989357",
+        "type": "debug",
+        "z": "d57bfbe67600b89c",
+        "name": "debug 110",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "21e61ac4734b014e",
+        "type": "debug",
+        "z": "d57bfbe67600b89c",
+        "name": "debug 111",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "325a2b2312b05c7a",
+        "type": "inject",
+        "z": "d57bfbe67600b89c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 80,
+        "y": 860,
+        "wires": [
+            [
+                "6818376fad51d6e0"
+            ]
+        ]
+    },
+    {
+        "id": "6818376fad51d6e0",
+        "type": "influxdb in",
+        "z": "d57bfbe67600b89c",
+        "influxdb": "8eeaa29da50ee831",
+        "name": "",
+        "query": "SELECT * FROM BMSENERGYFULL GROUP BY \"UnitID\" ORDER BY DESC LIMIT 1",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 280,
+        "y": 880,
+        "wires": [
+            [
+                "21e61ac4734b014e"
+            ]
+        ]
+    },
+    {
+        "id": "ac73920325ea262b",
+        "type": "influxdb in",
+        "z": "d57bfbe67600b89c",
+        "influxdb": "8eeaa29da50ee831",
+        "name": "",
+        "query": "SELECT MAX(ActiveEnergyD) - MIN(ActiveEnergyD) AS EBConsumption,MAX(ActiveEnergyR) - MIN(ActiveEnergyR) AS DGConsumption, MAX(ActiveEnergyD) AS EBReading, MAX(ActiveEnergyR) AS DGReading,MEAN(*) AS AVERAGE  FROM HTPENERGYFULL WHERE time >= '2023-08-14T10:15:00.000Z' -5h30m AND time < '2023-08-17T10:15:00.000Z' -5h30m tz('Asia/Calcutta') ORDER BY DESC LIMIT 5",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 360,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "848b09f476eb8b24",
+        "type": "debug",
+        "z": "d57bfbe67600b89c",
+        "name": "debug 112",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1290,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "c77bc812f288e994",
+        "type": "ui_template",
+        "z": "d57bfbe67600b89c",
+        "group": "cc6a072b86efde7a",
+        "name": "Report",
+        "order": 5,
+        "width": "12",
+        "height": "1",
+        "format": "<style>\n  \n\n\n    #Tab_REPORT {\n        height: 100vh;\n    \n        background-image: url(\"/img/logo3.png\");\n        background-attachment: fixed;\n        background-size: 100%;\n        background-repeat: no-repeat;\n    }\n\n    #toolbar {\n        display: flex;\n        //background: rgb(37,16,189);\n    \n        background: rgb(255, 255, 255);\n        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 2%, rgba(3, 12, 66, 1) 50%, rgba(255, 255, 255, 1) 98%);\n    }\n\n    .md-toolbar-tools h1,\n    .md-toolbar-tools h2,\n    .md-toolbar-tools h3 {\n        font-size: xx-large;\n        font-weight: 800;\n        margin: inherit;\n        font-style: normal;\n        font-family: serif;\n    }\n\n    #nr-dashboard-toolbar {\n        justify-content: space-between;\n    }\n\n</style>\n\n<script>\n    const img = document.createElement('img');\nimg.src = 'logo1.png';\nimg.style.display = 'flex';\nconst logo = document.createElement('img');\nlogo.src = 'index1.png';\nlogo.style.display = 'flex';\nconst list = document.getElementById(\"nr-dashboard-toolbar\");\nlist.removeChild(list.firstElementChild);\nlist.insertBefore(img, list.children[0]);\nlist.appendChild(logo);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 570,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "92a096a5bbddae0e",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "AHU,CSU",
+        "func": "var data = msg.payload;\nvar meterNames = [\n    \"none\",\n    \"CSU1 GF\",\n    \"CSU2 GF\",\n    \"CSU3 GF\",\n    \"CSU4 GF\",\n    \"1F AHU1 VFD1\",\n    \"1F AHU1 VFD2\",\n    \"3F AHU1 VFD1\",\n    \"3F AHU1 VFD2\",\n    \"3F AHU2 VFD1\",\n    \"3F AHU2 VFD2\"\n    \n];\n\nvar processedData = data.map(function (entry) {\n    return {\n\n        'TIME': entry.time,\n        'METER NAME': meterNames[entry.UnitID],\n        \"ACCELERATION TIME\": (entry.AVERAGE_Acceleration_Time !== null && entry.AVERAGE_Acceleration_Time !== 0 ? entry.AVERAGE_Acceleration_Time.toFixed(2) : entry.AVERAGE_Acceleration_Time),\n        \"DC LINK VOLTAGE\": (entry[\"AVERAGE_DC_Link_Voltage \"] !== null && entry[\"AVERAGE_DC_Link_Voltage \"] !== 0 ? entry[\"AVERAGE_DC_Link_Voltage \"].toFixed(2) : entry[\"AVERAGE_DC_Link_Voltage \"]),\n        \"DECELERATION TIME\": (entry.AVERAGE_Deceleration_Time !== null && entry.AVERAGE_Deceleration_Time !== 0 ? entry.AVERAGE_Deceleration_Time.toFixed(2) : entry.AVERAGE_Deceleration_Time),\n        \"OUTPUT CURRENT\": (entry.AVERAGE_Output_Current !== null && entry.AVERAGE_Output_Current !== 0 ? entry.AVERAGE_Output_Current.toFixed(2) : entry.AVERAGE_Output_Current),\n        \"OUTPUT FREQUENCY\": (entry.AVERAGE_Output_Frequency !== null && entry.AVERAGE_Output_Frequency !== 0 ? entry.AVERAGE_Output_Frequency.toFixed(2) : entry.AVERAGE_Output_Frequency),\n        \"OUTPUT POWER\": (entry.AVERAGE_Output_Power !== null && entry.AVERAGE_Output_Power !== 0 ? entry.AVERAGE_Output_Power.toFixed(2) : entry.AVERAGE_Output_Power),\n        \"OUTPUT VOLTAGE\": (entry.AVERAGE_Output_Voltage !== null && entry.AVERAGE_Output_Voltage !== 0 ? entry.AVERAGE_Output_Voltage.toFixed(2) : entry.AVERAGE_Output_Voltage),\n        \"UNIT ID\": entry.AVERAGE_UnitID,\n        \"FREQUENCY\": (entry.AVERAGE_frequency !== null && entry.AVERAGE_frequency !== 0 ? entry.AVERAGE_frequency.toFixed(2) : entry.AVERAGE_frequency),\n    };\n});\n\n// Set the processed data as the new payload\nmsg.payload = processedData;\n\n// Return the modified message\nreturn msg;\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 700,
+        "wires": [
+            [
+                "9e1aac1b3d5da317",
+                "848b09f476eb8b24",
+                "41c528ef7d775266"
+            ]
+        ]
+    },
+    {
+        "id": "8a63f16f3dc0af26",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "AHU,CSU",
+        "func": "",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1620,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b080e3f3e5421e70",
+        "type": "inject",
+        "z": "d57bfbe67600b89c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 1080,
+        "wires": [
+            [
+                "b68acde058ae032c"
+            ]
+        ]
+    },
+    {
+        "id": "b68acde058ae032c",
+        "type": "influxdb in",
+        "z": "d57bfbe67600b89c",
+        "influxdb": "8eeaa29da50ee831",
+        "name": "",
+        "query": "SELECT AMBIENT_HUMIDITY FROM PACDATAFULL ORDER BY DESC LIMIT 5",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 320,
+        "y": 1100,
+        "wires": [
+            [
+                "7658bc6f34d2e22f"
+            ]
+        ]
+    },
+    {
+        "id": "7658bc6f34d2e22f",
+        "type": "debug",
+        "z": "d57bfbe67600b89c",
+        "name": "debug 113",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "a918daac60fcdbec",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "chiller",
+        "func": "// Retrieve the incoming message payload\nvar data = msg.payload;\n\n// Process the data\nvar processedData = data.map(function (entry) {\n    return {\n        'TIME': entry.time,\n        \n        \n\n        \"ACTUAL CAPACITY\": (entry.AVERAGE_ActCap !== null && entry.AVERAGE_ActCap !== 0 ? entry.AVERAGE_ActCap.toFixed(2) : entry.AVERAGE_ActCap),\n        \"EEFT\": (entry.AVERAGE_EEFT !== null && entry.AVERAGE_EEFT !== 0 ? entry.AVERAGE_EEFT.toFixed(2) : entry.AVERAGE_EEFT),\n        \"ELFT\": (entry.AVERAGE_ELFT !== null && entry.AVERAGE_ELFT !== 0 ? entry.AVERAGE_ELFT.toFixed(2) : entry.AVERAGE_ELFT),\n        \"OUTDOOR AIR T\": (entry.AVERAGE_OutdoorAirT !== null && entry.AVERAGE_OutdoorAirT !== 0 ? entry.AVERAGE_OutdoorAirT.toFixed(2) : entry.AVERAGE_OutdoorAirT),\n        \"C1 CONDENSER P\": (entry.AVERAGE_C1CondenserP !== null && entry.AVERAGE_C1CondenserP !== 0 ? entry.AVERAGE_C1CondenserP.toFixed(2) : entry.AVERAGE_C1CondenserP),\n        \"C1 CONDENSER T\": (entry.AVERAGE_C1CondenserT !== null && entry.AVERAGE_C1CondenserT !== 0 ? entry.AVERAGE_C1CondenserT.toFixed(2) : entry.AVERAGE_C1CondenserT),\n        \"C1 CURRENT\": (entry.AVERAGE_C1Curr !== null && entry.AVERAGE_C1Curr !== 0 ? entry.AVERAGE_C1Curr.toFixed(2) : entry.AVERAGE_C1Curr),\n        \"C1 DISCHARGE T\": (entry.AVERAGE_C1DischargeT !== null && entry.AVERAGE_C1DischargeT !== 0 ? entry.AVERAGE_C1DischargeT.toFixed(2) : entry.AVERAGE_C1DischargeT),\n        \"C1 EVAPORATOR P\": (entry.AVERAGE_C1EvaporatorP !== null && entry.AVERAGE_C1EvaporatorP !== 0 ? entry.AVERAGE_C1EvaporatorP.toFixed(2) : entry.AVERAGE_C1EvaporatorP),\n        \"C1 EVAPORATOR T\": (entry.AVERAGE_C1EvaporatorT !== null && entry.AVERAGE_C1EvaporatorT !== 0 ? entry.AVERAGE_C1EvaporatorT.toFixed(2) : entry.AVERAGE_C1EvaporatorT),\n        \n        \"C1 POWER\": (entry.AVERAGE_C1Pow !== null && entry.AVERAGE_C1Pow !== 0 ? entry.AVERAGE_C1Pow.toFixed(2) : entry.AVERAGE_C1Pow),\n        \"C1 RLA\": (entry.AVERAGE_C1RLA !== null && entry.AVERAGE_C1RLA !== 0 ? entry.AVERAGE_C1RLA.toFixed(2) : entry.AVERAGE_C1RLA),\n        \n        \"C1 SUCTION T\": (entry.AVERAGE_C1SuctionT !== null && entry.AVERAGE_C1SuctionT !== 0 ? entry.AVERAGE_C1SuctionT.toFixed(2) : entry.AVERAGE_C1SuctionT),\n        \"C1 VOL\": (entry.AVERAGE_C1Vol !== null && entry.AVERAGE_C1Vol !== 0 ? entry.AVERAGE_C1Vol.toFixed(2) : entry.AVERAGE_C1Vol),\n        \"C2 CONDENSER P\": (entry.AVERAGE_C2CondenserP !== null && entry.AVERAGE_C2CondenserP !== 0 ? entry.AVERAGE_C2CondenserP.toFixed(2) : entry.AVERAGE_C2CondenserP),\n        \"C2 CONDENSER T\": (entry.AVERAGE_C2CondenserT !== null && entry.AVERAGE_C2CondenserT !== 0 ? entry.AVERAGE_C2CondenserT.toFixed(2) : entry.AVERAGE_C2CondenserT),\n        \"C2 CURRENT\": (entry.AVERAGE_C2Curr !== null && entry.AVERAGE_C2Curr !== 0 ? entry.AVERAGE_C2Curr.toFixed(2) : entry.AVERAGE_C2Curr),\n        \"C2 DISCHARGE T\": (entry.AVERAGE_C2DischargeT !== null && entry.AVERAGE_C2DischargeT !== 0 ? entry.AVERAGE_C2DischargeT.toFixed(2) : entry.AVERAGE_C2DischargeT),\n        \"C2 EVAPORATOR P\": (entry.AVERAGE_C2EvaporatorP !== null && entry.AVERAGE_C2EvaporatorP !== 0 ? entry.AVERAGE_C2EvaporatorP.toFixed(2) : entry.AVERAGE_C2EvaporatorP),\n        \"C2 EVAPORATOR T\": (entry.AVERAGE_C2EvaporatorT !== null && entry.AVERAGE_C2EvaporatorT !== 0 ? entry.AVERAGE_C2EvaporatorT.toFixed(2) : entry.AVERAGE_C2EvaporatorT),\n        \n        \"C2 POWER\": (entry.AVERAGE_C2Pow !== null && entry.AVERAGE_C2Pow !== 0 ? entry.AVERAGE_C2Pow.toFixed(2) : entry.AVERAGE_C2Pow),\n        \"C2 RLA\": (entry.AVERAGE_C2RLA !== null && entry.AVERAGE_C2RLA !== 0 ? entry.AVERAGE_C2RLA.toFixed(2) : entry.AVERAGE_C2RLA),\n        \n        \"C2 SUCTION T\": (entry.AVERAGE_C2SuctionT !== null && entry.AVERAGE_C2SuctionT !== 0 ? entry.AVERAGE_C2SuctionT.toFixed(2) : entry.AVERAGE_C2SuctionT),\n        \"C2 VOL\": (entry.AVERAGE_C2Vol !== null && entry.AVERAGE_C2Vol !== 0 ? entry.AVERAGE_C2Vol.toFixed(2) : entry.AVERAGE_C2Vol),\n        \"COOL SPN\": entry.AVERAGE_CoolSPN,\n        \"CURRENT\": (entry.AVERAGE_Current !== null && entry.AVERAGE_Current !== 0 ? entry.AVERAGE_Current.toFixed(2) : entry.AVERAGE_Current),\n        \n        \n        \n        \"LOCAL REMOTE\": entry.AVERAGE_LocalRemote,\n        \n        \n        \n        \n        \"SET POINT\": entry.AVERAGE_SetPoint,\n        \n        \n        'UNIT ID': entry.UnitID\n    };\n});\n\n// Set the processed data as the new payload\nmsg.payload = processedData;\n\n// Return the modified message\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "01502f976ea64b8c",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "pac",
+        "func": "var dataArray = msg.payload;\n\nvar processedData = dataArray.map(function (entry) {\n    return {\n        'TIME': entry.time != null ? entry.time : \"N/A\",\n        \"UNIT ID\": entry.UnitID != null ? entry.UnitID : \"N/A\",\n        \"FAN SPEED\": entry.AVERAGE_FAN_SPEED != null ? entry.AVERAGE_FAN_SPEED : \"N/A\",\n        \"AMBIENT HUMIDITY\": entry.AVERAGE_AMBIENT_HUMIDITY != null ? entry.AVERAGE_AMBIENT_HUMIDITY : \"N/A\",\n        \"AMBIENT TEMPERATURE\": entry.AVERAGE_AMBIENT_TEMPERATURE != null ? entry.AVERAGE_AMBIENT_TEMPERATURE : \"N/A\",\n        \"COOLING SET_POINT\": entry.AVERAGE_COOLING_SET_POINT != null ? entry.AVERAGE_COOLING_SET_POINT : \"N/A\",\n        \"HEATING SET_POINT\": entry.AVERAGE_HEATING_SET_POINT != null ? entry.AVERAGE_HEATING_SET_POINT : \"N/A\",\n        //\"TIMESTAMP\": entry.AVERAGE_TIMESTAMP != null ? entry.AVERAGE_TIMESTAMP : \"N/A\",\n    };\n});\n\n// Set the processed data as the new payload\nmsg.payload = processedData;\n\n// Return the modified message\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "68591971477ad2be",
+        "type": "inject",
+        "z": "d57bfbe67600b89c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 1240,
+        "wires": [
+            [
+                "ea25d145bdbfe7e3"
+            ]
+        ]
+    },
+    {
+        "id": "ea25d145bdbfe7e3",
+        "type": "influxdb in",
+        "z": "d57bfbe67600b89c",
+        "influxdb": "8eeaa29da50ee831",
+        "name": "",
+        "query": "SELECT AMBIENT_HUMIDITY FROM PACDATAFULL ORDER BY DESC LIMIT 5",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 440,
+        "y": 1260,
+        "wires": [
+            [
+                "0424e5b440c438b9"
+            ]
+        ]
+    },
+    {
+        "id": "0424e5b440c438b9",
+        "type": "debug",
+        "z": "d57bfbe67600b89c",
+        "name": "debug 114",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "53bec4916ec154b9",
+        "type": "debug",
+        "z": "d57bfbe67600b89c",
+        "name": "debug 115",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "ca7dc3f2574aec65",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "PAC",
+        "func": "\nvar dataArray = msg.payload;\n\nvar processedData = dataArray.map(function (entry) {\n    return {\n        'TIME': entry.time,\n        \"UNIT ID\": entry.UnitID,\n        \"FAN SPEED\": entry.AVERAGE_FAN_SPEED,\n        \"AMBIENT HUMIDITY\": entry.AVERAGE_AMBIENT_HUMIDITY,\n        \"AMBIENT TEMPERATURE\": entry.AVERAGE_AMBIENT_TEMPERATURE,\n        \"COOLING SET_POINT\": entry.AVERAGE_COOLING_SET_POINT,\n        \"HEATING SET_POINT\": entry.AVERAGE_HEATING_SET_POINT\n        //\"TIMESTAMP\": entry.AVERAGE_TIMESTAMP,\n        \n    };\n});\n\n// Set the processed data as the new payload\nmsg.payload = processedData;\n\n// Return the modified message\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "88c31f81267739b0",
+        "type": "function",
+        "z": "d57bfbe67600b89c",
+        "name": "PAC",
+        "func": "\nvar dataArray = msg.payload;\n\nvar processedData = dataArray.map(function (entry) {\n    return {\n        'TIME': entry.time,\n        \"UNIT ID\": entry.UnitID,\n        \"FAN SPEED\": entry.AVERAGE_FAN_SPEED,\n        \"AMBIENT HUMIDITY\": entry.AVERAGE_AMBIENT_HUMIDITY,\n        \"AMBIENT TEMPERATURE\": entry.AVERAGE_AMBIENT_TEMPERATURE,\n        \"COOLING SET_POINT\": entry.AVERAGE_COOLING_SET_POINT,\n        \"HEATING SET_POINT\": entry.AVERAGE_HEATING_SET_POINT\n        //\"TIMESTAMP\": entry.AVERAGE_TIMESTAMP,\n        \n    };\n});\n\n// Set the processed data as the new payload\nmsg.payload = processedData;\n\n// Return the modified message\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    }
+]
